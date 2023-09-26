@@ -61,7 +61,9 @@ function List() {
         {filteredMovies.length === 0 && (
           <p>Não existem filmes encontrados...</p>
         )}
-        {filteredMovies.length > 0 && <ListCustom movies={filteredMovies} />}
+        {filteredMovies.length > 0 && (
+          <ListCustom movies={filteredMovies} setMovies={setMovies} />
+        )}
       </div>
       <div className="flex justify-center items-center mb-8">
         <ButtonCustom
